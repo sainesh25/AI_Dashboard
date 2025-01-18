@@ -27,7 +27,8 @@ export const CategoryChart: React.FC<Props> = ({ data }) => {
               border: '1px solid rgba(255,255,255,0.2)',
               borderRadius: '8px',
               color: 'white'
-            }} 
+            }}
+            cursor={{fillOpacity: '0.1'}} 
           />
           <Legend 
             wrapperStyle={{ color: 'rgba(255,255,255,0.7)' }}
