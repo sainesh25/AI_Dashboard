@@ -1,6 +1,6 @@
 import React from 'react';
 import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import type { Rating, UserSatisfaction } from '../types/ai-data';
+import type { Rating } from '../types/ai-data';
 
 interface Props {
   data: Rating[];
