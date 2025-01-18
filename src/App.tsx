@@ -8,6 +8,7 @@ import { ResponseTimeChart } from './components/ResponseTimeChart.tsx';
 import { CategoryChart } from './components/CategoryChart.tsx';
 import { SatisfactionChart } from './components/SatisfactionChart.tsx';
 import { UsageChart } from './components/UsageChart.tsx';
+import InsightSummary from './components/InsightSummary.tsx';
 
 const container = {
   hidden: { opacity: 0 },
@@ -34,7 +35,7 @@ function App() {
 
   if (loading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="bg-slate-950 min-h-screen flex items-center justify-center">
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -76,7 +77,7 @@ function App() {
   }));
 
   return (
-    <div className="min-h-screen text-gray-100">
+    <div className="min-h-screen bg-slate-950 text-gray-100">
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -102,6 +103,7 @@ function App() {
       </motion.nav>
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+        <InsightSummary data={data.insight_summary}/>
         <motion.div
           variants={container}
           initial="hidden"
