@@ -1,47 +1,53 @@
 {
-  "metrics": [
-    { "timestamp": "2024-03-01", "accuracy": 0.95, "latency": 150, "requestCount": 1000 },
-    { "timestamp": "2024-03-02", "accuracy": 0.96, "latency": 145, "requestCount": 1200 },
-    { "timestamp": "2024-03-03", "accuracy": 0.94, "latency": 155, "requestCount": 980 },
-    { "timestamp": "2024-03-04", "accuracy": 0.97, "latency": 140, "requestCount": 1500 },
-    { "timestamp": "2024-03-05", "accuracy": 0.95, "latency": 148, "requestCount": 1300 }
-  ],
-  "modelPerformance": [
-    { "modelName": "GPT-4", "accuracy": 0.98, "latencyMs": 120, "lastUpdated": "2024-03-05" },
-    { "modelName": "BERT", "accuracy": 0.95, "latencyMs": 80, "lastUpdated": "2024-03-05" },
-    { "modelName": "RoBERTa", "accuracy": 0.96, "latencyMs": 90, "lastUpdated": "2024-03-05" }
-  ],
-  "categoryDistribution": [
-    { "category": "Text Classification", "count": 5000, "percentage": 40 },
-    { "category": "Named Entity Recognition", "count": 3000, "percentage": 24 },
-    { "category": "Sentiment Analysis", "count": 2500, "percentage": 20 },
-    { "category": "Question Answering", "count": 2000, "percentage": 16 }
-  ],
-  "responseTimes": [
-    { "date": "2024-03-01", "avgResponseTime": 120, "peakTime": 180, "offPeakTime": 90 },
-    { "date": "2024-03-02", "avgResponseTime": 115, "peakTime": 170, "offPeakTime": 85 },
-    { "date": "2024-03-03", "avgResponseTime": 125, "peakTime": 190, "offPeakTime": 95 },
-    { "date": "2024-03-04", "avgResponseTime": 110, "peakTime": 160, "offPeakTime": 80 },
-    { "date": "2024-03-05", "avgResponseTime": 118, "peakTime": 175, "offPeakTime": 88 }
-  ],
-  "userSatisfaction": [
-    { "rating": "Excellent", "count": 4500, "percentage": 45 },
-    { "rating": "Good", "count": 3000, "percentage": 30 },
-    { "rating": "Average", "count": 1500, "percentage": 15 },
-    { "rating": "Poor", "count": 1000, "percentage": 10 }
-  ],
-  "usageStatistics": {
-    "byPlatform": [
-      { "platform": "Web", "users": 5000, "percentage": 50 },
-      { "platform": "Mobile", "users": 3000, "percentage": 30 },
-      { "platform": "API", "users": 2000, "percentage": 20 }
-    ],
-    "byCountry": [
-      { "country": "United States", "users": 4000, "percentage": 40 },
-      { "country": "United Kingdom", "users": 2000, "percentage": 20 },
-      { "country": "Germany", "users": 1500, "percentage": 15 },
-      { "country": "Japan", "users": 1500, "percentage": 15 },
-      { "country": "Others", "users": 1000, "percentage": 10 }
-    ]
+  "insight_summary": {
+      "total_queries": 1500,
+      "successful_queries": 1350,
+      "failed_queries": 150,
+      "average_response_time": 0.45
+  },
+  "category_distribution": {
+      "small_talk": 300,
+      "technical_support": 450,
+      "sales_inquiries": 350,
+      "customer_service": 400
+  },
+  "response_times": {
+      "day_wise": [
+          {"date": "2023-05-01", "average_time": 0.4},
+          {"date": "2023-05-02", "average_time": 0.42},
+          {"date": "2023-05-03", "average_time": 0.35},
+          {"date": "2023-05-04", "average_time": 0.5},
+          {"date": "2023-05-05", "average_time": 0.47}
+      ],
+      "week_wise": [
+          {"week": "18", "average_time": 0.45},
+          {"week": "19", "average_time": 0.43},
+          {"week": "20", "average_time": 0.5},
+          {"week": "21", "average_time": 0.46},
+          {"week": "22", "average_time": 0.41}
+      ]
+  },
+  "user_satisfaction": {
+      "ratings": [
+          {"rating": 1, "count": 15},
+          {"rating": 2, "count": 35},
+          {"rating": 3, "count": 200},
+          {"rating": 4, "count": 500},
+          {"rating": 5, "count": 600}
+      ]
+  },
+  "usage_statistics": {
+      "by_platform": {
+          "iOS": 600,
+          "Android": 700,
+          "Web": 200
+      },
+      "by_country": {
+          "USA": 800,
+          "India": 250,
+          "Germany": 150,
+          "Japan": 100,
+          "Brazil": 200
+      }
   }
 }
