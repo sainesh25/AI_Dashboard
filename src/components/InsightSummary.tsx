@@ -14,12 +14,15 @@ interface InsightSummaryProps {
 export default function InsightSummary({ data }: InsightSummaryProps) {
   if (!data) return null
   // console.log(data);
-  
+
   return (
     <>
       <div className="flex gap-2 flex-wrap">
 
         <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.5 }}
           whileHover={{ scale: 1.02 }}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
@@ -30,9 +33,11 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
             {data.total_queries}
           </h3>
         </motion.div>
-        
+
         <motion.div
-          whileHover={{ scale: 1.02 }}
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.6 }}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
           <div className="z-10 relative flex flex-row items-center justify-between space-y-0 pb-2">
@@ -42,8 +47,11 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
             {data.successful_queries}
           </h3>
         </motion.div>
-        
+
         <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.7 }}
           whileHover={{ scale: 1.02 }}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
@@ -54,8 +62,11 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
             {data.failed_queries}
           </h3>
         </motion.div>
-        
+
         <motion.div
+          initial={{ scale: 0.5, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.4, delay: 0.8 }}
           whileHover={{ scale: 1.02 }}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
@@ -66,7 +77,7 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
             {data.average_response_time.toFixed(2)}s
           </h3>
         </motion.div>
-        
+
       </div>
     </>
   )
