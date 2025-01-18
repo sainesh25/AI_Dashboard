@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 shadow-xl;
+  }
+  
+  .glass-nav {
+    @apply bg-white/5 backdrop-blur-md border-b border-white/10;
+  }
+  
+  .chart-container {
+    @apply glass-card rounded-xl p-6;
+  }
+  
+  .neon-border {
+    @apply relative overflow-hidden;
+  }
+  
+  .neon-border::before {
+    content: '';
+    @apply absolute inset-0;
+    background: linear-gradient(90deg, #0ea5e9, #0891b2, #0ea5e9);
+    background-size: 200% 100%;
+    animation: gradientMove 8s linear infinite;
+  }
+  
+  .neon-border::after {
+    content: '';
+    @apply absolute inset-[1px] rounded-xl bg-slate-950/90 backdrop-blur-sm;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 200% 0%; }
+  }
+}
