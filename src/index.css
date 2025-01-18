@@ -2,11 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
+/* @layer base {
   body {
     @apply bg-gradient-to-br from-slate-950 via-slate-900 to-cyan-950;
   }
-}
+} */
+ 
 
 @layer components {
   .glass-card {
