@@ -22,7 +22,7 @@ A modern, interactive dashboard built with React and TypeScript for visualizing 
 - **Charts**: Recharts
 - **Animations**: Framer Motion
 - **Icons**: Lucide React
-- **Build Tool**: Vite
+- **Build Tool**: Create-React-App
 
 ## Getting Started
 
