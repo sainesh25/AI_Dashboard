@@ -1,46 +1,134 @@
-# Getting Started with Create React App
+# AI Insights Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, interactive dashboard built with React and TypeScript for visualizing AI model performance metrics, usage statistics, and user satisfaction data.
 
-## Available Scripts
+![AI Insights Dashboard]
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- 📊 Real-time performance metrics visualization
+- 🤖 AI model performance tracking
+- 📈 Response time analysis (daily and weekly trends)
+- 🌍 Geographic usage distribution
+- 📱 Platform-wise usage statistics
+- ⭐ User satisfaction ratings
+- 🎯 Category-wise query distribution
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tech Stack
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Frontend Framework**: React 18 with TypeScript
+- **State Management**: Redux Toolkit
+- **Styling**: Tailwind CSS
+- **Charts**: Recharts
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **Build Tool**: Vite
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
 
-### `npm run build`
+- Node.js (v18 or higher)
+- npm or yarn
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/sainesh25/AI_Dashboard.git
+   cd ai-dashboard
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. Start the development server:
+   ```bash
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Open your browser and navigate to `http://localhost:5173`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Building for Production
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run build
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The built files will be in the `dist` directory.
 
-## Learn More
+## Project Structure
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+src/
+├── components/          # React components
+│   ├── CategoryChart.tsx
+│   ├── MetricsChart.tsx
+│   ├── ModelCard.tsx
+│   ├── ResponseTimeChart.tsx
+│   ├── SatisfactionChart.tsx
+│   └── UsageChart.tsx
+├── store/              # Redux store configuration
+│   ├── aiSlice.ts
+│   └── store.ts
+├── types/              # TypeScript interfaces
+│   └── ai-data.ts
+├── data/               # Mock data
+│   └── ai-data.json
+├── App.tsx             # Main application component
+└── index.tsx           # Application entry point
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features in Detail
+
+### Performance Metrics
+- Real-time tracking of AI model accuracy and latency
+- Historical performance data visualization
+- Response time analysis with daily and weekly breakdowns
+
+### Usage Analytics
+- Geographic distribution of users
+- Platform-wise usage statistics
+- Category distribution of queries
+- User satisfaction ratings
+
+### Interactive Visualizations
+- Responsive charts that adapt to screen size
+- Interactive tooltips with detailed information
+- Smooth animations and transitions
+- Dark theme with neon accents
+
+## Customization
+
+### Theme
+The dashboard uses a custom dark theme with neon accents. You can modify the theme in:
+- `tailwind.config.js` for color schemes
+- `index.css` for global styles and animations
+
+### Data Source
+Currently using mock data from `src/data/ai-data.json`. To connect to a real API:
+1. Update the `fetchAIData` thunk in `src/store/aiSlice.ts`
+2. Modify the data interfaces in `src/types/ai-data.ts` if needed
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Acknowledgments
+
+- [React](https://reactjs.org/)
+- [Redux Toolkit](https://redux-toolkit.js.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Recharts](https://recharts.org/)
+- [Framer Motion](https://www.framer.com/motion/)
+- [Lucide Icons](https://lucide.dev/)

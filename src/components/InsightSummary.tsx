@@ -23,7 +23,7 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.5 }}
-          whileHover={{ scale: 1.02 }}
+          viewport={{ once: true}}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
           <div className="z-10 relative flex flex-row items-center justify-between space-y-0 pb-2">
@@ -38,6 +38,7 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.6 }}
+          viewport={{ once: true }}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
           <div className="z-10 relative flex flex-row items-center justify-between space-y-0 pb-2">
@@ -52,7 +53,7 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.7 }}
-          whileHover={{ scale: 1.02 }}
+          viewport={{ once: true}}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
           <div className="z-10 relative flex flex-row items-center justify-between space-y-0 pb-2">
@@ -67,7 +68,7 @@ export default function InsightSummary({ data }: InsightSummaryProps) {
           initial={{ scale: 0.5, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.4, delay: 0.8 }}
-          whileHover={{ scale: 1.02 }}
+          viewport={{ once: true}}
           className="flex-grow my-2 glass-card rounded-xl p-6 neon-border"
         >
           <div className="z-10 relative flex flex-row items-center justify-between space-y-0 pb-2">
